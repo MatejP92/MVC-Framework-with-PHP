@@ -1,0 +1,6 @@
+*
+!.gitignore
+
+#  the * ignores everything
+#  the ! means except, so in this folder ignore everything except this file
+#  so it doesn't get pushed online. in runtime we store cache files, login data. basically every data, that should not be visible to public online

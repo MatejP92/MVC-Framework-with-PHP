@@ -1,0 +1,8 @@
+vendor
+.idea
+.env
+
+
+#   vendor folder should also be ignored
+#   the * ignores everything
+#   the ! means except, so in this folder ignore everything except this file

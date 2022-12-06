@@ -1,0 +1,17 @@
+{
+    "name": "matej/php-mvc-framework_free-code-camp",
+    "authors": [
+        {
+            "name": "Matej Pal",
+            "email": "matejpal92@gmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4": {
+            "app\\":"./"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
