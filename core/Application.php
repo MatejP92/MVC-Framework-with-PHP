@@ -15,16 +15,18 @@ class Application
 {
     public static string $ROOT_DIR;
 
+    public string $layout = "main";
     public string $userClass;
     public Router $router;
     public Request $request;
     public Response $response;
     public Session $session;
     public Database $db;
-    public ?DbModel $user;
+    public ?UserModel $user;
+    public View $view;
 
     public static Application $app;
-    public Controller $controller;
+    public ?Controller $controller = null;
     public function __construct($rootPath, array $config)
     {
         $this->userClass = $config["userClass"];
@@ -34,7 +36,8 @@ class Application
         $this->response = new Response();
         $this->session = new Session();
         $this->router   = new Router($this->request, $this->response);
-
+        $this->view = new View();
+        
         $this->db = new Database($config["db"]);
 
         $primaryValue = $this->session->get("user");
@@ -49,7 +52,14 @@ class Application
 
     public function run()
     {
-        echo $this->router->resolve();
+        try {
+            echo $this->router->resolve();
+        } catch (\Exception $e){
+            $this->response->setStatusCode($e->getCode());
+            echo $this->view->renderView("_error", [
+                "exception" => $e
+            ]);
+        }
     }
 
     
@@ -71,7 +81,7 @@ class Application
         $this->controller = $controller;
     }
 
-    public function login(DbModel $user){
+    public function login(UserModel $user){
         $this->user = $user;
         $primaryKey = $user->PrimaryKey();
         $primaryValue = $user->{$primaryKey};
