@@ -3,10 +3,10 @@
 
 namespace app\controllers;
 
-use app\core\Application;
-use app\core\Controller;
-use app\core\Request;
-use app\core\Response;
+use matejpal\phpmvc\Application;
+use matejpal\phpmvc\Controller;
+use matejpal\phpmvc\Request;
+use matejpal\phpmvc\Response;
 use app\models\ContactForm;
 
 /**

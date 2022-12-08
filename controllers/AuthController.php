@@ -4,12 +4,12 @@
 namespace app\controllers;
 
 use app\models\User;
-use app\core\Request;
-use app\core\Response;
-use app\core\Controller;
-use app\core\Application;
+use matejpal\phpmvc\Request;
+use matejpal\phpmvc\Response;
+use matejpal\phpmvc\Controller;
+use matejpal\phpmvc\Application;
 use app\models\LoginForm;
-use app\core\middlewares\AuthMiddleware;
+use matejpal\phpmvc\middlewares\AuthMiddleware;
 
 /**
  * Class AuthController

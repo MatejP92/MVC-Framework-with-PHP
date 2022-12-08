@@ -14,7 +14,7 @@
 
 use app\controllers\AuthController;
 use app\controllers\SiteController;
-use app\core\Application;       // with this we use app core Application in this file, so we dont have to write the path to it when defining new classes
+use matejpal\phpmvc\Application;       // with this we use app core Application in this file, so we dont have to write the path to it when defining new classes
 
 
 require_once __DIR__."/../vendor/autoload.php";
@@ -32,7 +32,7 @@ $config = [
     ]
 ];
 
-$app = new Application(dirname(__DIR__), $config);       // if we didnt have the use app\core\application above, we would always need to write new app\core\Application() if we want to create a new instance of the Application
+$app = new Application(dirname(__DIR__), $config);       // if we didnt have the use matejpal\phpmvc\application above, we would always need to write new matejpal\phpmvc\Application() if we want to create a new instance of the Application
 
 
 // 2 classes need to be created, application and router

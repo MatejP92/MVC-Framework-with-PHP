@@ -2,8 +2,8 @@
 /** User: Matej */
 
 namespace app\models;
-use app\core\Application;
-use app\core\Model;
+use matejpal\phpmvc\Application;
+use matejpal\phpmvc\Model;
 use app\models\User;
 
 

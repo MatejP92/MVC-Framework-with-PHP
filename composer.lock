@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f84fa64f9d79e9cdf7963f6b328e67aa",
+    "content-hash": "0ba06d5910dc6775c061be390979fab9",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -67,6 +67,40 @@
                 }
             ],
             "time": "2022-07-30T15:56:11+00:00"
+        },
+        {
+            "name": "matejpal/php-mvc-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MatejP92/mp-php-mvc-core.git",
+                "reference": "678d841c6dc60847bc0b38c62c92f2faa8fb91ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MatejP92/mp-php-mvc-core/zipball/678d841c6dc60847bc0b38c62c92f2faa8fb91ad",
+                "reference": "678d841c6dc60847bc0b38c62c92f2faa8fb91ad",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "matejpal\\phpmvc\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Matej Pal",
+                    "email": "matejpal92@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/MatejP92/mp-php-mvc-core/issues",
+                "source": "https://github.com/MatejP92/mp-php-mvc-core/tree/v1.0.2"
+            },
+            "time": "2022-12-08T18:26:10+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -479,7 +513,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "matejpal/php-mvc-core": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

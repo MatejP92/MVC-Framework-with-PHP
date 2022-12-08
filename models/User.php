@@ -3,7 +3,7 @@
 
 namespace app\models;
 
-use app\core\UserModel;
+use matejpal\phpmvc\UserModel;
 
 
 /**

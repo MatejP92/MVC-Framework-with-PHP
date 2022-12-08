@@ -3,7 +3,7 @@
 
 namespace app\models;
 
-use app\core\Model;
+use matejpal\phpmvc\Model;
 
 /**
  * Class ContactForm

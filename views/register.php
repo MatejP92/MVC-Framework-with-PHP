@@ -1,6 +1,6 @@
 <?php
 /** @var $model \app\models\User */
-/** @var $this \app\core\View */
+/** @var $this \matejpal\phpmvc\View */
 
 $this->title = "Register";
 
@@ -8,7 +8,7 @@ $this->title = "Register";
 
 <h1>Register</h1>
 
-<?php $form = \app\core\form\Form::begin("", "post") ?>
+<?php $form = \matejpal\phpmvc\form\Form::begin("", "post") ?>
 <div class="row">
   <div class="col">
     <?php echo $form->field($model, "firstname") ?>
@@ -23,5 +23,5 @@ $this->title = "Register";
 
 <button type="submit" class="btn btn-primary">Submit</button>
 
-<?php echo \app\core\form\Form::end() ?>
+<?php echo \matejpal\phpmvc\form\Form::end() ?>
 
