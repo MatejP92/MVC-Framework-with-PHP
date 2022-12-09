@@ -7,5 +7,4 @@ Link: https://www.youtube.com/watch?v=6ERdu4k62wI&t=627s&ab_channel=freeCodeCamp
 Connection to core folder<br>
 Link: https://github.com/MatejP92/mp-php-mvc-core
 <hr>
-Not finished yet<br>
-Updates comming in daily
+
